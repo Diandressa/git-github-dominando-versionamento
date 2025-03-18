@@ -60,7 +60,7 @@ Anotações das aulas e comandos relevantes.
 Comandos               | Descrição
 ---------              | ------
 git log --oneline      | Para ver somente os títulos e hashs dos commits
-git log -p             | Exibe em formato diff as alterações dos commits --- linhas removidas e +++ linhas adicionadas
+git log -p             | Exibe em formato diff as alterações dos commits --- linhas removidas e +++ linhas adicionadas -p. Para visualizar as alterações em cada arquivo modificado;
 git status | Qual branch estamos e se tem alterações para comitar
 git diff | Mostra a diferença entre o último commit e as alterações feitas (não comitadas)
 
