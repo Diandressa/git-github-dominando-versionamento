@@ -84,9 +84,34 @@ git show | Sem a hash o default será o HEAD, mostra os detalhes do último comm
 
 > HEAD é o commit mais recente da branch atual
 
+### Branch
+
+Comandos                 | Descrição
+---------                | ------
+git branch               | Mostra as ramificações existentes no projeto
+git branch nomebranch    | Criar uma nova branch
+git checkout* nomebranch  | Modifica a branch atual para a branch informada
+git branch -m nomeatual novonome | Renomeia a branch
+git branch -d nomebranch | Remover a branch
+git checkout -b nomenovabranch | Cria nova branch e alterna para ela = b de branch
+git switch -c nomenovabranch | Cria nova branch e alterna para ela = c de create (mais atual)
+
+*checkout é um comando antigo, atualmente é utilizado o git switch
+*posso unir dois comando em um só
+
+
 ### Anotações
 
+Branch/Ramificação
 
+Para visualizar como as branchs funcionam
+https://git-school.github.io/visualizing-git/
+
+![exemplo de branch](./img/branch.jpg)
+
+A branch padrão é a Main (antigamente se chamava Master)
+
+Ao criar uma novra branch preciso modificar a branch atual para essa nova
 
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
