@@ -96,6 +96,7 @@ git branch -d nomebranch | Remover a branch
 git checkout -b nomenovabranch | Cria nova branch e alterna para ela = b de branch
 git switch -c nomenovabranch | Cria nova branch e alterna para ela = c de create (mais atual)
 git switch nomedabranch | Volta para branch desejada
+git push origin novabranch | push na branch desejada
 
 *checkout é um comando antigo, atualmente é utilizado o git switch
 *posso unir dois comando em um só
