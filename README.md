@@ -4,7 +4,7 @@
 ## Descrição
 O que faz o app
 Com o que ele foi construído 
-Por que foi contruído
+Por que foi construído
 
 ## Pré requisitos
   instalaçao node, git...
@@ -68,6 +68,10 @@ Posso comparar um commit específico com outro.
 
 `git diff {hashcommit}..{hashcommit}`
 
+*compara só as alterações que não adicionei para o commit ainda. 
+
+Se informarmos apenas uma hash específica ele compara esse hash com o último comitado por padrão.
+
 
 ### Status dos Commits - menos usados
 Comandos               | Descrição
@@ -81,6 +85,7 @@ git show | Sem a hash o default será o HEAD, mostra os detalhes do último comm
 > HEAD é o commit mais recente da branch atual
 
 ### Anotações
+
 
 
 ## Licença
