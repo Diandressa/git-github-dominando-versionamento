@@ -55,10 +55,30 @@ Anotações das aulas e comandos relevantes.
 
 ## Comandos 
 
-### Criar repositório e comitar
+### Status dos Commits
 
 Comandos               | Descrição
 ---------              | ------
+git log --oneline      | Para ver somente os títulos e hashs dos commits
+git log -p             | Exibe em formato diff as alterações dos commits --- linhas removidas e +++ linhas adicionadas
+git status | Qual branch estamos e se tem alterações para comitar
+git diff | Mostra a diferença entre o último commit e as alterações feitas (não comitadas)
+
+Posso comparar um commit específico com outro.
+
+`git diff {hashcommit}..{hashcommit}`
+
+
+### Status dos Commits - menos usados
+Comandos               | Descrição
+---------              | ------
+git log --graph        | Mostra a linha do tempo dos commits
+git log -- pretty ou git log --format 
+git log --help         | Abre o manual do git, podemos procurar pelos formats no arquivo.
+git show {hash do commit} | É o git log -p para o commit específico -> mostra as alterações
+git show | Sem a hash o default será o HEAD, mostra os detalhes do último commit
+
+> HEAD é o commit mais recente da branch atual
 
 ### Anotações
 
