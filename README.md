@@ -174,7 +174,21 @@ Após o `git rebase main`
 ![Após o git rebase main](./img/atualizando_branch2.jpg)
 Observe que ao realocar commit a commit na main atualizado, ele commit novamente essas alterações, por isso as hash são diferentes ao inserir-las na main.
 
+* Preciso dar o push origin main e push origin novafunc, para atualizar as duas branchs.
+* Após isso posso dar o merge em novafunc para main. para unir as duas branchs, como já fiz o rebase não dá o commit de merge. 
+* Posteriormente, dou git push origin main.
 
+Quando os merge precisam de fast-foward (tudo alinhado, sem ramificação), significa que precisa ser feito o git rebase antes do git merge.
+
+![fast-foward](https://atlassianblog.wpengine.com/wp-content/uploads/2024/11/what-is-a-fast-forward.gif)
+
+#### Diferença entre **git merge** x **git rebase**
+O rebase uni a branch que estou trabalhando para a main, somando meus commit depois da main atualizada. Deixa tudo na mesma linha do tempo.
+Já o merge mistura/mescla as branchs, no qual, preciso revisar os conflitos.
+
+O merge junta os trabalhos de duas branches, podendo gerar um merge commit. Já o rebase aplica os commits de outra branch na branch atual.
+
+![diferença entre merge e rebase](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2022/01/fig13.png)
 
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
