@@ -106,6 +106,8 @@ git push origin novabranch | push na branch desejada
 Comandos                 | Descrição
 ---------                | ------
 git merge novabranch     | Uni a branch atual com a branch informada
+git branch -d branchobsoleta | Remove branch no repositório local
+git push origin :branchobsoleta | Remove a branch no repositório remoto
 
 #### Antes da unir as branchs (merge)
 ![Antes da merge](./img/merge1.jpg)
@@ -117,6 +119,10 @@ git merge novabranch     | Uni a branch atual com a branch informada
 ![Depois do merge](./img/merge2.jpg)
 
 Isso é o fast-foward (move adiante)
+
+>commit merge:
+
+Ao unir branch com estados diferentes (alterções diferentes), eles vai comitar as diferenças, posso dar push e depois deletar a branch não mais utilizada
 
 ### Anotações
 
