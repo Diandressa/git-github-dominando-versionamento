@@ -139,6 +139,8 @@ A branch padrão é a Main (antigamente se chamava Master)
 
 Ao criar uma nova branch preciso modificar a branch atual para essa nova
 
+Normalmente, a branch main é o projeto final que irá para produção
+
 #### Pull request
 
   Um Fork é um cópia de um repositório para nossa conta
@@ -150,6 +152,28 @@ Ao criar uma nova branch preciso modificar a branch atual para essa nova
   ![Pullrequest](./img/pullrequest.jpg)
 
   Podemos contribuir e abrir um pull request
+
+#### Atualizando a branch (Reescrevendo a branch)
+
+A main pode ter recebido outros commits de outros colaborados. 
+Criamos a branch novafunc após a main já ser atualizada. 
+No entanto, quero que a branch seja recriada em cima da versão mais atual na main.
+Quero que meus commits fiquem depois da main atualizada.
+Para isso podemos usar o comando
+`git rebase`
+
+
+![Atualizando a branch](./img/atualizando_branch.jpg)
+
+Comandos                 | Descrição
+---------                | ------
+git rebase               | Reescreve a branch depois da main atualizada
+
+Após o `git rebase main`
+
+![Após o git rebase main](./img/atualizando_branch2.jpg)
+Observe que ao realocar commit a commit na main atualizado, ele commit novamente essas alterações, por isso as hash são diferentes ao inserir-las na main.
+
 
 
 ## Licença
