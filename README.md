@@ -99,7 +99,6 @@ git switch -c nomenovabranch | Cria nova branch e alterna para ela = c de create
 *checkout é um comando antigo, atualmente é utilizado o git switch
 *posso unir dois comando em um só
 
-
 ### Anotações
 
 Branch/Ramificação
