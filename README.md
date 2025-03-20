@@ -126,6 +126,8 @@ Ao unir branch com estados diferentes (alterções diferentes), eles vai comitar
 
 ### Anotações
 
+#### Branch
+
 Branch/Ramificação
 
 Para visualizar como as branchs funcionam
@@ -135,7 +137,20 @@ https://git-school.github.io/visualizing-git/
 
 A branch padrão é a Main (antigamente se chamava Master)
 
-Ao criar uma novra branch preciso modificar a branch atual para essa nova
+Ao criar uma nova branch preciso modificar a branch atual para essa nova
+
+#### Pull request
+
+  Um Fork é um cópia de um repositório para nossa conta
+
+  Ao clonar o fork e fazer o git push na branch, o seguinte aviso é dado no repositório do github
+
+  ```This branch is 1 commit ahead of Fernanda-Kipper/Readme-Templates:main.```
+
+  ![Pullrequest](./img/pullrequest.jpg)
+
+  Podemos contribuir e abrir um pull request
+
 
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
