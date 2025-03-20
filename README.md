@@ -101,6 +101,22 @@ git push origin novabranch | push na branch desejada
 *checkout é um comando antigo, atualmente é utilizado o git switch
 *posso unir dois comando em um só
 
+### Unir Branch
+
+Comandos                 | Descrição
+---------                | ------
+git merge novabranch     | Uni a branch atual com a branch informada
+
+#### Antes da unir as branchs (merge)
+![Antes da merge](./img/merge1.jpg)
+
+#### Depois de unir as branchs
+
+*mudar para branch master e unir com a atual
+
+![Depois do merge](./img/merge2.jpg)
+
+Isso é o fast-foward (move adiante)
 
 ### Anotações
 
