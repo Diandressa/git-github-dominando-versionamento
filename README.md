@@ -90,9 +90,9 @@ Comandos                 | Descrição
 ---------                | ------
 git branch               | Mostra as ramificações existentes no projeto
 git branch nomebranch    | Criar uma nova branch
-git checkout* nomebranch  | Modifica a branch atual para a branch informada
 git branch -m nomeatual novonome | Renomeia a branch
 git branch -d nomebranch | Remover a branch
+git checkout* nomebranch  | Modifica a branch atual para a branch informada
 git checkout -b nomenovabranch | Cria nova branch e alterna para ela = b de branch
 git switch -c nomenovabranch | Cria nova branch e alterna para ela = c de create (mais atual)
 
