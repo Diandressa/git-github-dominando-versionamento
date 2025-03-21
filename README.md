@@ -185,5 +185,7 @@ Comandos                 | Descrição
 git restore . | Restauro para o último commit. Descarta todos os arquivos não commitados do projeto. 
 git restore | Restaura o index.html . Descarta as alterações nesse arquivo
 
+git checkout -- . tinha a função do git restore, porém é um comando antigo
+
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
