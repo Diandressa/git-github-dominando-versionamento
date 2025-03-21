@@ -159,6 +159,7 @@ Comandos                 | Descrição
 git stash | Guarda uma alteração para continuar nela depois
 git stash pop | Trás as alterações que foram pausadas
 git stash list | Mostra as alterações engavetados
+git stash drop | Remove um único item do stash list
 git stash clear | Limpa as stash/ as alterações engavetadas
 git stash push -m "texto" | stash com nome específico
 git stash apply índice | para voltar para um índice específico do stash list
@@ -169,6 +170,11 @@ Podemos apagar o git stash com `git stash clear`
 E adicionar a git stash com nome mais específico/descritivo
 
 Ao fazer mais de uma stash, ele vai armazenando na lista. Podemos ver essa lista com o `git stash list` . Cada stash é adicionada em uma pilha. Ao dar o git stash pop ele retorna o último da pilha, que é o índice 0. Para voltar à um stash específico usamos o git stash apply nº (número do índice que vemos no git stash list)
+
+O git stash apply não remove o stash da lista, já o git stash pop remove aquela stash da list.
+Podemos dar `git stash apply nºindice` ou `git stash pop nºindice`
+
+O git stash drop remove o último item da lista de stash sem aplicar as alterações no repositório. Enquanto o git stash drop 1 remove da stash o item com índice 1.
 
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
