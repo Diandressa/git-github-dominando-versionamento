@@ -101,7 +101,7 @@ git push origin novabranch | push na branch desejada
 *checkout é um comando antigo, atualmente é utilizado o git switch
 *posso unir dois comando em um só
 
-### Unir Branch
+### Unir ou Remover Branch
 
 Comandos                 | Descrição
 ---------                | ------
@@ -122,7 +122,32 @@ Isso é o fast-foward (move adiante)
 
 >commit merge:
 
-Ao unir branch com estados diferentes (alterções diferentes), eles vai comitar as diferenças, posso dar push e depois deletar a branch não mais utilizada
+Ao unir branch com estados diferentes (alterações diferentes), eles vai comitar as diferenças, posso dar push e depois deletar a branch não mais utilizada
+
+### Interromper projeto
+
+Quando estou no meio da criação de uma nova funcionalidade e preciso parar esse desenvolvimento por algum motivo.
+Preciso engavetar essa alteração, sem criar um commit, para alterar outra parte do código. Posteriormente recupera-la e depois comitar.
+
+Para isso podemos usar o comando `git stash`
+
+As alterações não aparecem no arquivo, para traze-las de volta usamos o comando `git stash pop`
+
+Comandos                 | Descrição
+---------                | ------
+git stash | Guarda uma alteração para continuar nela depois
+git stash pop | Trás as alterações que foram pausadas
+git stash list | Mostra as alterações engavetados
+git stash clear | Limpa as stash/ as alterações engavetadas
+git stash push -m "texto" | stash com nome específico
+git stash apply índice | para voltar para um índice específico do stash list
+
+o `git stash list` mostra wip (working in progress) on nomedabranch (branch que estávamos) último commit 
+Não é mt descritivo.
+Podemos apagar o git stash com `git stash clear`
+E adicionar a git stash com nome mais específico/descritivo
+
+Ao fazer mais de uma stash, ele vai armazenando na lista. Podemos ver essa lista com o `git stash list` . Cada stash é adicionada em uma pilha. Ao dar o git stash pop ele retorna o último da pilha, que é o índice 0. Para voltar à um stash específico usamos o git stash apply nº (número do índice que vemos no git stash list)
 
 ### Anotações
 
@@ -167,7 +192,7 @@ Para isso podemos usar o comando
 
 Comandos                 | Descrição
 ---------                | ------
-git rebase               | Reescreve a branch depois da main atualizada
+git rebase nomebranch              | Reescreve a branch depois da main atualizada
 
 Após o `git rebase main`
 
