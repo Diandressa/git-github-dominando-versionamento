@@ -1,46 +1,3 @@
-<!-- 
-# Título  
-
-## Descrição
-O que faz o app
-Com o que ele foi construído 
-Por que foi construído
-
-## Pré requisitos
-  instalaçao node, git...
-
-## Instrução de instalação
-```bash
-  npm install
-```
-
-## Instrução de uso
-  Como utilizar o projeto em passos ou em bash. Podemos usar prints ou gifs
-
-## Licença
-
-### Permissão para uso comercial
-### se inspirar
-### Educacional
-### Não comercial
-
-## Contribuição
-
-## Gitflow 
-Quais padrões os dev podem seguir para contribuir
-
-## badges
-
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) <br>
-https://github.com/Ileriayo/markdown-badges/blob/master/README.md
-
-## Contruibuidores  ou Owner (donos do projeto)
-  reconhecimentos
-
-Podemos usar templates de README
-https://github.com/Fernanda-Kipper/Readme-Templates?tab=readme-ov-file 
--->
-
 # [Curso Git e GitHub: dominando controle de versão de código - Alura](https://cursos.alura.com.br/course/git-github-dominando-controle-versao-codigo)
 
 ![Imagem do curso](/img/img.jpg)
@@ -124,33 +81,6 @@ Isso é o fast-foward (move adiante)
 
 Ao unir branch com estados diferentes (alterações diferentes), eles vai comitar as diferenças, posso dar push e depois deletar a branch não mais utilizada
 
-### Interromper projeto
-
-Quando estou no meio da criação de uma nova funcionalidade e preciso parar esse desenvolvimento por algum motivo.
-Preciso engavetar essa alteração, sem criar um commit, para alterar outra parte do código. Posteriormente recupera-la e depois comitar.
-
-Para isso podemos usar o comando `git stash`
-
-As alterações não aparecem no arquivo, para traze-las de volta usamos o comando `git stash pop`
-
-Comandos                 | Descrição
----------                | ------
-git stash | Guarda uma alteração para continuar nela depois
-git stash pop | Trás as alterações que foram pausadas
-git stash list | Mostra as alterações engavetados
-git stash clear | Limpa as stash/ as alterações engavetadas
-git stash push -m "texto" | stash com nome específico
-git stash apply índice | para voltar para um índice específico do stash list
-
-o `git stash list` mostra wip (working in progress) on nomedabranch (branch que estávamos) último commit 
-Não é mt descritivo.
-Podemos apagar o git stash com `git stash clear`
-E adicionar a git stash com nome mais específico/descritivo
-
-Ao fazer mais de uma stash, ele vai armazenando na lista. Podemos ver essa lista com o `git stash list` . Cada stash é adicionada em uma pilha. Ao dar o git stash pop ele retorna o último da pilha, que é o índice 0. Para voltar à um stash específico usamos o git stash apply nº (número do índice que vemos no git stash list)
-
-### Anotações
-
 #### Branch
 
 Branch/Ramificação
@@ -214,6 +144,31 @@ Já o merge mistura/mescla as branchs, no qual, preciso revisar os conflitos.
 O merge junta os trabalhos de duas branches, podendo gerar um merge commit. Já o rebase aplica os commits de outra branch na branch atual.
 
 ![diferença entre merge e rebase](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2022/01/fig13.png)
+
+### Interromper projeto
+
+Quando estou no meio da criação de uma nova funcionalidade e preciso parar esse desenvolvimento por algum motivo.
+Preciso engavetar essa alteração, sem criar um commit, para alterar outra parte do código. Posteriormente recupera-la e depois comitar.
+
+Para isso podemos usar o comando `git stash`
+
+As alterações não aparecem no arquivo, para traze-las de volta usamos o comando `git stash pop`
+
+Comandos                 | Descrição
+---------                | ------
+git stash | Guarda uma alteração para continuar nela depois
+git stash pop | Trás as alterações que foram pausadas
+git stash list | Mostra as alterações engavetados
+git stash clear | Limpa as stash/ as alterações engavetadas
+git stash push -m "texto" | stash com nome específico
+git stash apply índice | para voltar para um índice específico do stash list
+
+o `git stash list` mostra wip (working in progress) on nomedabranch (branch que estávamos) último commit 
+Não é mt descritivo.
+Podemos apagar o git stash com `git stash clear`
+E adicionar a git stash com nome mais específico/descritivo
+
+Ao fazer mais de uma stash, ele vai armazenando na lista. Podemos ver essa lista com o `git stash list` . Cada stash é adicionada em uma pilha. Ao dar o git stash pop ele retorna o último da pilha, que é o índice 0. Para voltar à um stash específico usamos o git stash apply nº (número do índice que vemos no git stash list)
 
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
