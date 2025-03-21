@@ -187,5 +187,30 @@ git restore | Restaura o index.html . Descarta as alterações nesse arquivo
 
 git checkout -- . tinha a função do git restore, porém é um comando antigo
 
+Podemos modificar arquivos não adicionados para commit, nossa Working tree - árvore de trabalho
+
+### Restore staged
+
+Após adicionar um arquivo, antes de commitar, ficamos no staged area/estado pronto para ser comitado.
+Podemos desfazer esse add com `git restore --staged`
+Podemos voltar um add específico com `git restore --staged index.html` por exemplo.
+
+Podemos mover um arquivo para um estado/commit anterior com `git restore --source=cógidodocommit nomearquivo`
+
+Exemplo: `git restore --source=ceb836bb75633cb3de5d28ef92633fff08be4f85 index.html`
+Após esse comando, ainda podemos voltar para o estado anterior, antes do restore source, com o `git restore index.html` ou `git restore --source=HEAD index.html`
+
+Movemos a index.html para como ela era naquele commit.
+
+Comandos                 | Descrição
+---------                | ------
+git restore --staged | Remove o arquivo do commit
+git restore --staged index.html | Remove o arquivo, no caso index.html, do commit
+git restore --source=códigodocommit nomearquivo | Move um arquivo para o estado que era naquele commit
+git restore nomearquivo ou git restore --source=HEAD nomearquivo | move o arquivo para o estado atual
+
+Podemos manipular o Staging Area, modificar arquivos adicionados
+
+
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
