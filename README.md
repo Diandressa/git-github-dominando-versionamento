@@ -176,5 +176,14 @@ Podemos dar `git stash apply nºindice` ou `git stash pop nºindice`
 
 O git stash drop remove o último item da lista de stash sem aplicar as alterações no repositório. Enquanto o git stash drop 1 remove da stash o item com índice 1.
 
+### Restaurar/ Voltar para o último commit
+
+Podemos voltar para o último commit, descartando as alteraçõs feitas não commitadas nem adicionadas
+
+Comandos                 | Descrição
+---------                | ------
+git restore . | Restauro para o último commit. Descarta todos os arquivos não commitados do projeto. 
+git restore | Restaura o index.html . Descarta as alterações nesse arquivo
+
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
