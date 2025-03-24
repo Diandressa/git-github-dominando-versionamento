@@ -224,12 +224,21 @@ git push origin nomeversao | Envio a tag passada para o repositório remoto.
 git push origin --tags | Envia todas as tags para o repositório remoto.
 git tag -d nomedatag | Excluir a tag no repositório local
 git tag -a nomedatag -m "Mensagem"| Cria uma annotaded tag com uma mensagem. O -a é opcional
+git tag -v nomedatag | Verifica os dados da tag, só funciona com tags annotaded
 
 git log --oneline
 
 No gitbub, na parte de releases, consigo visualizar as tags ou apaga-las do repositório remoto.
 Consigo criar descrições para as tags. São as Annotaded Tags.
 Preciso dar o push das tags para o repositório remoto após criá-las no local.
+
+### Releases
+
+Disponibiliza a versão de uma forma mais detalhada.
+Podemos criar no site do github, escolhendo uma tag. Podemos também gerar no github um release notes, que gera as alterações feitas nessa versão. Quando não tem alterações aparece o Full Changelog. Mostro o diff entra as versões existentes. Consigo inserir um arquivo também, como arquivos binários (projeto compilado), além disso o release cria automaticamente o projeto compilado em rar e tar.gz dessa forma o projeto fica disponível para pessoas que não utilizem git, elas também podem ter acesso ao código fonte pela release.
+
+
+
 
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
