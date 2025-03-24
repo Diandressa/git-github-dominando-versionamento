@@ -237,7 +237,9 @@ Preciso dar o push das tags para o repositório remoto após criá-las no local.
 Disponibiliza a versão de uma forma mais detalhada.
 Podemos criar no site do github, escolhendo uma tag. Podemos também gerar no github um release notes, que gera as alterações feitas nessa versão. Quando não tem alterações aparece o Full Changelog. Mostro o diff entra as versões existentes. Consigo inserir um arquivo também, como arquivos binários (projeto compilado), além disso o release cria automaticamente o projeto compilado em rar e tar.gz dessa forma o projeto fica disponível para pessoas que não utilizem git, elas também podem ter acesso ao código fonte pela release.
 
+### Pegando um commit
 
+Aproveitar um commit de uma branch em outra branch 
 
 
 ## Licença
