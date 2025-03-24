@@ -250,6 +250,15 @@ git log nomebranch | Ve os logs da daquela branch.
 git cherry-pick hashCommit| Busca aquele commit e traz para branch atual
 git push origin branch1 branch2 | Dar git push em duas branchs ao mesmo tempo
 
+### Encontrar o autor - git blame
+
+Comandos                 | Descrição
+---------                | ------
+git blame nomeArquivo | Ve quem alterou aquele arquivo. Mostra o último commit de cada linha.
+
+As linhas que começam com ^ (acento circunflexo) mostra que é o commit original, o primeiro commit desse projeto. Posso analisar melhor o commit com o git show hashdoCommit
+
+
 
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
