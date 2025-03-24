@@ -209,8 +209,27 @@ git restore --staged index.html | Remove o arquivo, no caso index.html, do commi
 git restore --source=códigodocommit nomearquivo | Move um arquivo para o estado que era naquele commit
 git restore nomearquivo ou git restore --source=HEAD nomearquivo | move o arquivo para o estado atual
 
-Podemos manipular o Staging Area, modificar arquivos adicionados
+Podemos manipular o Staging Area, modificar arquivos adicionados.
 
+### Criando versões
+
+Posso dar um nome/save para um ponto da aplicação, no git chamamos isso de **tag**. Para ver as tags adicionados podemos dar o git log.
+
+Comandos                 | Descrição
+---------                | ------
+git tag | Ve todas as tags.
+git tag nomeversao | Cria uma tag na branch atual, no commit atual.
+git tag nomeversao idCommit| Cria uma tag em um commit específico.
+git push origin nomeversao | Envio a tag passada para o repositório remoto.
+git push origin --tags | Envia todas as tags para o repositório remoto.
+git tag -d nomedatag | Excluir a tag no repositório local
+git tag -a nomedatag -m "Mensagem"| Cria uma annotaded tag com uma mensagem. O -a é opcional
+
+git log --oneline
+
+No gitbub, na parte de releases, consigo visualizar as tags ou apaga-las do repositório remoto.
+Consigo criar descrições para as tags. São as Annotaded Tags.
+Preciso dar o push das tags para o repositório remoto após criá-las no local.
 
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
