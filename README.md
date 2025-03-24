@@ -237,13 +237,18 @@ Preciso dar o push das tags para o repositório remoto após criá-las no local.
 Disponibiliza a versão de uma forma mais detalhada.
 Podemos criar no site do github, escolhendo uma tag. Podemos também gerar no github um release notes, que gera as alterações feitas nessa versão. Quando não tem alterações aparece o Full Changelog. Mostro o diff entra as versões existentes. Consigo inserir um arquivo também, como arquivos binários (projeto compilado), além disso o release cria automaticamente o projeto compilado em rar e tar.gz dessa forma o projeto fica disponível para pessoas que não utilizem git, elas também podem ter acesso ao código fonte pela release.
 
-### Pegando um commit
+### Pegando um commit - git cherry-pick
 
-Aproveitar um commit de uma branch em outra branch 
+Aproveitar um commit de uma branch em outra branch. Damos git log no commit em outra branch e copiamos o hash do commit que queremos trazer para essa branch. Após isso damos  `git cherry-pick hashCommit` para trazer para essa branch.
+
+Podemos dar git push em duas branchs ao mesmo tempo: `git push origin branch1 branch2`
 
 Comandos                 | Descrição
 ---------                | ------
 git log nomebranch | Ve os logs da daquela branch.
+git log nomebranch | Ve os logs da daquela branch.
+git cherry-pick hashCommit| Busca aquele commit e traz para branch atual
+git push origin branch1 branch2 | Dar git push em duas branchs ao mesmo tempo
 
 
 ## Licença
