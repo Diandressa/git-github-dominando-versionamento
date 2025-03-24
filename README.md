@@ -241,6 +241,10 @@ Podemos criar no site do github, escolhendo uma tag. Podemos também gerar no gi
 
 Aproveitar um commit de uma branch em outra branch 
 
+Comandos                 | Descrição
+---------                | ------
+git log nomebranch | Ve os logs da daquela branch.
+
 
 ## Licença
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) 
