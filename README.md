@@ -1,7 +1,27 @@
 # [Curso Git e GitHub: dominando controle de versão de código - Alura](https://cursos.alura.com.br/course/git-github-dominando-controle-versao-codigo)
 
-![Imagem do curso](/img/img.jpg)
+![Imagem do curso](/img/img.png)
 
+# Menu
+
+- [Descrição](#descrição)
+- [Pré requisitos](#pré-requisitos)
+- [Comandos](#comandos)
+  - [Status dos Commits](#status-dos-commits)
+  - [Status dos Commits - menos usados](#status-dos-commits---menos-usados)
+  - [Branch](#branch)
+  - [Unir ou Remover Branch](#unir-ou-remover-branch)
+  - [Pull request](#pull-request)
+  - [Atualizando a branch (Reescrevendo a branch)](#atualizando-a-branch-reescrevendo-a-branch)
+  - [Diferença entre git merge x git rebase](#diferença-entre-git-merge-x-git-rebase)
+  - [Interromper projeto](#interromper-projeto)
+  - [Restaurar/ Voltar para o último commit](#restaurar-voltar-para-o-último-commit)
+  - [Restore staged](#restore-staged)
+  - [Criando versões](#criando-versões)
+  - [Releases](#releases)
+  - [Pegando um commit - git cherry-pick](#pegando-um-commit---git-cherry-pick)
+  - [Encontrar o autor - git blame](#encontrar-o-autor---git-blame)
+- [Licença](#licença)
 
 ## Descrição
 Anotações das aulas e comandos relevantes.
